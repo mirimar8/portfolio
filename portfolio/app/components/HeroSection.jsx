@@ -30,24 +30,26 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-white text-base sm:text-lg lg:text-xl mb-6">
-         Specializing in front-end web development, I am dedicated to creating and optimizing interactive, 
-         user-friendly, and feature-rich websites. 
-         <br></br>With a keen eye for user experience, design and a strong 
-         attention to detail, I can deliver original and efficient web solutions. 
-         <br></br>I am capable of building new websites from start to finish, 
-         passionate about learning new skills, and successfully collaborate with a team of other software 
-         professionals.
-
+            Specializing in front-end web development, I am dedicated to
+            creating and optimizing interactive, user-friendly, and feature-rich
+            websites.
+            <br></br>With a keen eye for user experience, design and a strong
+            attention to detail, I can deliver original and efficient web
+            solutions.
+            <br></br>I am capable of building new websites from start to finish,
+            passionate about learning new skills, and successfully collaborate
+            with a team of other software professionals.
           </p>
           <div>
             <Link
               href="/#contact"
-              className="px-10 inline-block py-3 w-full sm:w-fit rounded mr-4 
+              className="px-12 py-3 mb-4 mr-0 min-[406px]:mr-4 inline-flex items-center justify-center w-fit rounded sm:inline-block  
               bg-gradient-to-r from-[#DC2424] to-[#4A569D] text-white font-semibold text-center transition 
               duration-300 hover:from-[#bf1313] hover:to-[#2d3a81] ease"
             >
               Hire Me
             </Link>
+           
             {/* <Link
               href="/#contact"
               class="relative inline-flex items-center justify-center px-10 py-3 mr-4 overflow-hidden font-medium
@@ -63,13 +65,14 @@ const HeroSection = () => {
             </Link> */}
             <Link
               href="/"
-              className="relative p-1 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
+              className="relative sm:w-fit p-1 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
             >
               <span
                 class="w-full h-full bg-gradient-to-br from-[#DC2424] to-[#4A569D] 
                 group-hover:from-[#4A569D] group-hover:to-[#DC2424] absolute"
               ></span>
-              <span class="relative px-5 py-2 transition-all ease-out bg-[#252526] rounded-md group-hover:bg-opacity-0 duration-400">
+              <span class="relative px-5 py-2 transition-all ease-out bg-[#252526] rounded-md group-hover:bg-opacity-0 
+                duration-400">
                 <span className="relative text-white">Download CV</span>
               </span>
             </Link>
