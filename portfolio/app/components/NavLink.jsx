@@ -1,13 +1,12 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
-const NavLink = ({href,title}) => {
+const NavLink = ({ href, title }) => {
   return (
-    <Link href={href}
-    className="">
-        {title}
+    <Link href={href} className="block py-2">
+      {title}
     </Link>
-  )
-}
+  );
+};
 
-export default NavLink
+export default NavLink;
