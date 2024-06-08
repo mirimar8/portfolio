@@ -34,10 +34,9 @@ const HeroSection = () => {
             creating and optimizing interactive, user-friendly, and feature-rich
             websites.
             <br></br>With a keen eye for user experience, design and a strong
-            attention to detail, I can deliver original and efficient web
+            attention to detail, I deliver original and efficient web
             solutions.
-            <br></br>I am capable of building new websites from start to finish,
-            passionate about learning new skills, and successfully collaborate
+            <br></br>I am passionate about learning new skills, and love collaborating
             with a team of other software professionals.
           </p>
           <div>
@@ -49,7 +48,7 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-           
+
             {/* <Link
               href="/#contact"
               class="relative inline-flex items-center justify-center px-10 py-3 mr-4 overflow-hidden font-medium
@@ -65,14 +64,16 @@ const HeroSection = () => {
             </Link> */}
             <Link
               href="/"
-              className="relative sm:w-fit p-1 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
+              className="relative sm:w-fit p-1 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-md"
             >
               <span
                 class="w-full h-full bg-gradient-to-br from-[#DC2424] to-[#4A569D] 
-                group-hover:from-[#4A569D] group-hover:to-[#DC2424] absolute"
-              ></span>
-              <span class="relative px-5 py-2 transition-all ease-out bg-[#252526] rounded-md group-hover:bg-opacity-0 
-                duration-400">
+                group-hover:from-[#4A569D] group-hover:to-[#DC2424] absolute">
+                </span>
+              <span
+                class="relative px-5 py-2 transition-all ease-out bg-[#252526] rounded-md group-hover:bg-opacity-0 
+                duration-400"
+              >
                 <span className="relative text-white">Download CV</span>
               </span>
             </Link>
