@@ -25,7 +25,7 @@ const navLinks = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 right-0 left-0 z-10 bg-[#252526] bg-opacity-100 border-b-2">
+    <nav className="fixed top-0 right-0 left-0 z-10 bg-[#252526] bg-opacity-100 shadow-xl">
       <div className="flex flex-wrap items-center justify-between mx-auto px-10">
         <Link href={"/"} className="">
           <Image
@@ -40,21 +40,21 @@ const Navbar = () => {
           {navbarOpen ? (
             <button 
             onClick={() => setNavbarOpen(false)}
-            className="flex items-center text-slate-200 border rounded border-slate-200 px-2 py-2">
+            className="flex items-center text-slate-200 border rounded px-2 py-2">
               <XMarkIcon className="h-5 w-5" />
             </button>
           ) : (
             <button 
             onClick={() => setNavbarOpen(true)}
-            className="flex items-center text-slate-200 border rounded border-slate-200 px-2 py-2">
+            className="flex items-center text-slate-200 border rounded px-2 py-2">
                 <Bars3Icon className="h-5 w-5" />
             </button>
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex flex-row px-4 space-x-8 text-white text-xl">
+          <ul className="flex flex-row px-4 space-x-8 text-xl">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="text-white hover:shadow-[#DC2424] hover:text-shadow-lg">
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
