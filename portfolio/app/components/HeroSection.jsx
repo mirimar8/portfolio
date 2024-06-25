@@ -6,10 +6,10 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="mb-20">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 text-center sm:text-left">
-          <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl pt-10 mb-20 pb-20">
+        <div className="col-span-7 text-center sm:text-left content-center">
+          <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#DC2424] to-[#4A569D]">
               Hey! I&apos;m
             </span>

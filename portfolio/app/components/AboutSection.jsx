@@ -70,15 +70,15 @@ const techSkills = [
 
 const AboutSection = () => {
   return (
-    <section className="text-white">
-      <div className="md:flex md:flex-row py-12 justify-between text-center md:text-left">
-        <div className="md:w-2/5 md:mr-10 mb-10 md:mb-0 self-center">
-          <h1
+    <section className="text-white mb-20">
+       <h1
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#DC2424] to-[#4A569D]
-             font-extrabold text-4xl sm:text-5xl lg:text-6xl py-4"
+             font-extrabold text-4xl sm:text-5xl lg:text-6xl py-4 text-center"
           >
             About Me
           </h1>
+      <div className="md:flex md:flex-row py-12 justify-between text-center md:text-left">
+        <div className="md:w-2/5 md:mr-10 mb-10 md:mb-0 self-center">
           <p className="pt-4">
             Based in Vancouver, BC, Canada, I am a full-stack developer
             specializing in frontend web development who is constantly willing to
