@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="mb-20">
+    <section className="h-screen grid items-center">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 text-center sm:text-left content-center">
           <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl">
