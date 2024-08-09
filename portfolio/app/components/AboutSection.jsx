@@ -105,7 +105,7 @@ const AboutSection = () => {
           <div className="pt-10">
             <Link
               href="/#contact"
-              className="px-12 py-3 mb-4 mr-0 min-[406px]:mr-4 inline-flex items-center justify-center w-fit rounded-xl sm:inline-block  
+              className="px-12 py-3 mb-4 mr-0 min-[406px]:mr-4 inline-flex items-center justify-center w-fit rounded-lg sm:inline-block  
               bg-gradient-to-r from-[#DC2424] to-[#4A569D] text-white font-semibold text-center transition 
               duration-300 hover:from-[#bf1313] hover:to-[#2d3a81] ease"
             >
@@ -120,7 +120,7 @@ const AboutSection = () => {
                 group-hover:from-[#4A569D] group-hover:to-[#DC2424] absolute">
                 </span>
               <span
-                className="relative px-5 py-2 transition-all ease-out bg-[#252526] rounded-xl group-hover:bg-opacity-0 
+                className="relative px-5 py-2 transition-all ease-out bg-[#252526] rounded-lg group-hover:bg-opacity-0 
                 duration-400"
               >
                 <span className="relative text-white">Download CV</span>
