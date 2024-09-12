@@ -40,7 +40,7 @@ const ContactSection = () => {
   }
 
   return (
-    <section className="text-white mb-20">
+    <section id="contact" className="text-white mb-20 scroll-mt-32">
       <h1
         className="text-transparent bg-clip-text bg-gradient-to-r from-[#DC2424] to-[#4A569D]
              font-extrabold text-4xl sm:text-5xl lg:text-6xl py-4 text-center"
@@ -49,7 +49,7 @@ const ContactSection = () => {
       </h1>
       <p className="text-center">
         Have a question, want to work together or just say hi?
-        <br></br>Let&apos;s connect! Leave a message here and I&apos;ll get back
+        <br></br>Let&apos;s connect! <br></br>Leave a message here and I&apos;ll get back
         to you as soon as possible.{" "}
       </p>
 
@@ -102,7 +102,7 @@ const ContactSection = () => {
             minLength={10}
             maxLength={500}
             required
-            className="mb-6 bg-[#18191E] border border-[#33353F] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            className="mb-9 bg-[#18191E] border border-[#33353F] text-gray-100 text-sm rounded-lg block w-full p-2.5"
           ></textarea>
         </div>
         <button
@@ -111,7 +111,7 @@ const ContactSection = () => {
           className="px-12 py-3 rounded-lg  
               disabled:bg-gray-400 disabled:text-gray-100 bg-gradient-to-r 
               from-[#DC2424] to-[#4A569D] text-white font-semibold text-center transition 
-              duration-300 hover:from-[#bf1313] hover:to-[#2d3a81] ease "
+              duration-300 hover:from-[#bf1313] hover:to-[#2d3a81] ease self-center"
         >
           Send Message
         </button>
