@@ -7,17 +7,17 @@ function Footer() {
       <ul className="flex flex-row justify-center">
         <li className="px-3 transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110">
           <a href="https://www.linkedin.com/in/miri-markovitz/" target="blank">
-          <Image className="rounded" src="/images/linkedin-icon.png" alt="LinkedIn" width={40} height={40} />
+          <Image className="rounded" src="/images/linkedin-icon.png" alt="LinkedIn" width={35} height={35} />
           </a>
         </li>
         <li className="px-3 transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110">
           <a href="https://github.com/mirimar8">
-          <Image className="rounded" src="/images/github-icon-footer.png" alt="Github" width={40} height={40} />
+          <Image className="rounded" src="/images/github-icon-footer.png" alt="Github" width={35} height={35} />
           </a>
         </li>
         <li className="px-3 transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110">
           <a href="mailto:mirimarkovitzbl@gmail.com">
-          <Image className="rounded" src="/images/email-icon.png" alt="Email" width={40} height={40} />
+          <Image className="rounded" src="/images/email-icon.png" alt="Email" width={35} height={35} />
           </a>
         </li>
       </ul>
