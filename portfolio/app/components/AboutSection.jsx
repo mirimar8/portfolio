@@ -73,34 +73,27 @@ const AboutSection = () => {
     <section id="about" className="text-white mb-20 scroll-mt-32">
        <h1
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#DC2424] to-[#4A569D]
-             font-extrabold text-4xl sm:text-5xl lg:text-6xl py-4 text-center"
+             font-extrabold text-4xl sm:text-5xl lg:text-6xl py-4 text-center mb-10"
           >
             About Me
           </h1>
-      <div className="md:flex md:flex-row py-12 justify-between text-center md:text-left">
-        <div className="md:w-2/5 md:mr-10 mb-10 md:mb-0 self-center">
-          <p className="pt-4">
+      <div className="lg:flex lg:flex-row justify-between text-center lg:text-left">
+        <div className="lg:w-2/5 lg:mr-10 mb-20 lg:mb-0 self-center">
+          <p className="pt-4 px-10 lg:px-0">
             Based in Vancouver, BC, Canada, I am a full-stack developer
-            specializing in frontend web development who is constantly willing to
-            grow, learn and expand my skills.
+            specializing in frontend web development, dedicated to
+            creating and optimizing interactive, user-friendly, and feature-rich
+            websites.
             <br></br>
             <br></br>
             My background is in accounting but diving into code and creating new
             and fun websites, made me change my direction in life. I love
             writing code, make beautiful things work and celebrate the outcome.
-            I am passionate about how things function, how they look and the
+            <br></br>
+            <br></br>
+            With a keen eye for user experience, design and a strong
+            attention to detail, I am passionate about how things function, how they look and the
             combination of both.
-            <br></br>
-            <br></br>
-            When I’m not around the computer, I love hanging out with my husband
-            and two kids, going for walks and eating yummy food.
-            {/* Specializing in front-end web development, I am dedicated to
-            creating and optimizing interactive, user-friendly, and feature-rich
-            websites.
-            <br></br>With a keen eye for user experience, design and a strong
-            attention to detail, I deliver original and efficient web solutions.
-            <br></br>I am passionate about learning new skills, and love
-            collaborating with a team of other software professionals. */}
           </p>
           <div className="pt-10">
             <Link
@@ -131,7 +124,7 @@ const AboutSection = () => {
             </Link>
           </div>
         </div>
-        <div className="md:ml-10 grid grid-cols-6 grid-rows-8 gap-4 items-center justify-items-center">
+        <div className="lg:ml-10 grid grid-cols-6 grid-rows-8 gap-4 items-center justify-items-center">
           {techSkills.map((skill, index) => (
             <TechSkill
               key={index}
