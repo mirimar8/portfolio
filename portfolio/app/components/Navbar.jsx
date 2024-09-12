@@ -52,7 +52,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex flex-row px-4 space-x-8 text-xl">
+          <ul className="flex flex-row px-4 space-x-8 text-xl font-medium">
             {navLinks.map((link, index) => (
               <li key={index} className="text-white hover:shadow-[#DC2424] hover:text-shadow-lg hover:text-[#DC2424]">
                 <NavLink href={link.path} title={link.title} />
