@@ -37,8 +37,8 @@ const HeroSection = () => {
                 className="rounded-full"
                 src="/images/hero-image.png"
                 alt="Miri Markovitz"
-                width={300}
-                height={300}
+                width={500}
+                height={500}
               />
             </div>
           </div>
