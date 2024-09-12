@@ -4,8 +4,8 @@ import ProjectCard from "./ProjectCard";
 const projectsdata = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "My personal portfolio website",
+    title: "Portfolio",
+    description: "My personal portfolio website built with Next.js and TailwindCSS.",
     image: "/images/projects/1.png",
     gitUrl: "https://github.com/mirimar8/Portfolio",
     previewUrl: "/",
@@ -13,7 +13,7 @@ const projectsdata = [
   {
     id: 2,
     title: "Savings Calculator",
-    description: "Clearbridge savings tool",
+    description: "An interactive savings calculator tool built with vanilla JavaScript, HTML5 and CSS3.",
     image: "/images/projects/2.png",
     gitUrl: "https://github.com/mirimar8/Savings-Calculator",
     previewUrl: "https://app.clearone.ca/cb/miri/cost-calculator/index.html",
@@ -21,16 +21,16 @@ const projectsdata = [
   {
     id: 3,
     title: "Habitent",
-    description: "Wordpress website",
+    description: "A WordPress custom theme website, built with PHP, JavaScript, CSS3 and Sass.",
     image: "/images/projects/3.png",
     gitUrl: "https://github.com/mirimar8/Inhabitent-Project-4",
-    previewUrl: "/",
+    previewUrl: "https://github.com/mirimar8/Inhabitent-Project-4",
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section className="text-white mb-20">
+    <section id="projects" className="text-white mb-20 scroll-mt-32">
       <div>
         <h1
           className="text-transparent bg-clip-text bg-gradient-to-r from-[#DC2424] to-[#4A569D]
