@@ -70,7 +70,7 @@ const techSkills = [
 
 const AboutSection = () => {
   return (
-    <section className="text-white mb-20">
+    <section id="about" className="text-white mb-20 scroll-mt-32">
        <h1
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#DC2424] to-[#4A569D]
              font-extrabold text-4xl sm:text-5xl lg:text-6xl py-4 text-center"
@@ -112,7 +112,10 @@ const AboutSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="/resume.pdf" 
+              download="Miri_Markovitz_Resume_.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="relative sm:w-fit p-1 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-xl"
             >
               <span
