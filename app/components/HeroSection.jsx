@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
+
 const HeroSection = () => {
   return (
     <section className="h-screen grid items-center">
