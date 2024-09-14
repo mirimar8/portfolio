@@ -79,7 +79,7 @@ const AboutSection = () => {
           </h1>
       <div className="lg:flex lg:flex-row justify-between text-center lg:text-left">
         <div className="lg:w-2/5 lg:mr-10 mb-20 lg:mb-0 self-center">
-          <p className="pt-4 px-10 lg:px-0">
+          <p className="pt-4 px-0">
             Based in Vancouver, BC, Canada, I am a full-stack developer
             specializing in frontend web development, dedicated to
             creating and optimizing interactive, user-friendly, and feature-rich
@@ -98,7 +98,7 @@ const AboutSection = () => {
           <div className="pt-10">
             <Link
               href="/#contact"
-              className="px-12 py-3 mb-4 mr-0 min-[406px]:mr-4 inline-flex items-center justify-center w-fit rounded-lg sm:inline-block  
+              className="px-12 py-3 mb-4 mr-0 min-[384px]:mr-4 inline-flex items-center justify-center w-fit rounded-lg sm:inline-block  
               bg-gradient-to-r from-[#DC2424] to-[#4A569D] text-white font-semibold text-center transition 
               duration-300 hover:from-[#bf1313] hover:to-[#2d3a81] ease"
             >
