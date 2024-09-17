@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-// import { toast } from 'sonner';
 
 const ContactSection = () => {
   const [loading, setLoading] = useState(false);
@@ -27,7 +26,7 @@ const ContactSection = () => {
 
    if (response.ok) {
     console.log("Message sent successfully");
-    setStatus('error');
+    setStatus('success');
     setLoading(false);
     
     //reset the form
