@@ -5,18 +5,22 @@ const projectsdata = [
   {
     id: 1,
     title: "Portfolio",
-    description: "My personal portfolio website built with Next.js and TailwindCSS.",
+    description: "A personal portfolio website built with Next.js and TailwindCSS.",
     image: "/images/projects/1.png",
     gitUrl: "https://github.com/mirimar8/Portfolio",
     previewUrl: "/",
+    isVisibleGitUrl: true,
+    isVisiblePreviewUrl: true,
   },
   {
     id: 2,
     title: "Sunny Side Up Bartending",
-    description: "A wordpress landing page design created for a bartending business.",
+    description: "A WordPress landing page design created for a bartending business.",
     image: "/images/projects/2.png",
     gitUrl: "",
     previewUrl: "https://sunnysideupbartending.com/",
+    isVisibleGitUrl: false,
+    isVisiblePreviewUrl: true,
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ const projectsdata = [
     image: "/images/projects/3.png",
     gitUrl: "https://github.com/mirimar8/Savings-Calculator",
     previewUrl: "https://mirimar8.github.io/Savings-Calculator/",
+    isVisibleGitUrl: true,
+    isVisiblePreviewUrl: true,
   },
   {
     id: 4,
@@ -32,7 +38,9 @@ const projectsdata = [
     description: "A WordPress custom theme website, built with PHP, JavaScript, CSS3 and Sass.",
     image: "/images/projects/4.png",
     gitUrl: "https://github.com/mirimar8/Inhabitent-Project-4",
-    previewUrl: "https://github.com/mirimar8/Inhabitent-Project-4",
+    previewUrl: "",
+    isVisibleGitUrl: true,
+    isVisiblePreviewUrl: false,
   },
 ];
 
@@ -55,6 +63,8 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              isVisibleGitUrl={project.isVisibleGitUrl}
+              isVisiblePreviewUrl={project.isVisiblePreviewUrl}
             />
           ))}
         </div>

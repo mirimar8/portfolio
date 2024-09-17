@@ -2,7 +2,8 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, isVisibleGitUrl, isVisiblePreviewUrl }) => {
+// const [show, setshow] = useState(true);
   return (
     <div>
       <div className="rounded-xl bg-gradient-to-br from-[#DC2424] to-[#4A569D] p-1">
@@ -14,7 +15,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           className="items-center justify-center obsolute top-0 left-0 w-full h-full bg-[#252526]/0 hidden
         md:group-hover:flex md:group-hover:bg-[#252526]/80 transition-all duration-500 rounded-xl"
         >
-          <Link
+          { isVisibleGitUrl && <Link
             target="_blank"
             href={gitUrl}
             className="md:h-14 md:w-14 h-9 w-9 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -24,7 +25,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"
             />
           </Link>
-          <Link
+          }
+          { isVisiblePreviewUrl && <Link
             target="_blank"
             href={previewUrl}
             className="md:h-14 md:w-14 h-9 w-9 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -34,6 +36,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"
             />
           </Link>
+          }
         </div>
       </div>
       </div>
