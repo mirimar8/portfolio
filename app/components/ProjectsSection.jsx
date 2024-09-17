@@ -12,17 +12,25 @@ const projectsdata = [
   },
   {
     id: 2,
-    title: "Savings Calculator",
-    description: "An interactive savings calculator tool built with vanilla JavaScript, HTML5 and CSS3.",
+    title: "Sunny Side Up Bartending",
+    description: "A wordpress landing page design created for a bartending business.",
     image: "/images/projects/2.png",
-    gitUrl: "https://github.com/mirimar8/Savings-Calculator",
-    previewUrl: "https://app.clearone.ca/cb/miri/cost-calculator/index.html",
+    gitUrl: "",
+    previewUrl: "https://sunnysideupbartending.com/",
   },
   {
     id: 3,
+    title: "Savings Calculator",
+    description: "An interactive savings calculator tool built with vanilla JavaScript, HTML5 and CSS3.",
+    image: "/images/projects/3.png",
+    gitUrl: "https://github.com/mirimar8/Savings-Calculator",
+    previewUrl: "https://mirimar8.github.io/Savings-Calculator/",
+  },
+  {
+    id: 4,
     title: "Habitent",
     description: "A WordPress custom theme website, built with PHP, JavaScript, CSS3 and Sass.",
-    image: "/images/projects/3.png",
+    image: "/images/projects/4.png",
     gitUrl: "https://github.com/mirimar8/Inhabitent-Project-4",
     previewUrl: "https://github.com/mirimar8/Inhabitent-Project-4",
   },
@@ -38,7 +46,7 @@ const ProjectsSection = () => {
         >
           My Projects
         </h1>
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {projectsdata.map((project) => (
             <ProjectCard
               key={project.id}

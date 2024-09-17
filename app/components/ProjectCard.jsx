@@ -5,15 +5,17 @@ import Link from "next/link";
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div>
+      <div className="rounded-xl bg-gradient-to-br from-[#DC2424] to-[#4A569D] p-1">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        className="h-80 md:h-96 relative group rounded-xl bg-[#252526]"
+        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}
       >
         <div
           className="items-center justify-center obsolute top-0 left-0 w-full h-full bg-[#252526]/0 hidden
-        group-hover:flex group-hover:bg-[#252526]/80 transition-all duration-500"
+        md:group-hover:flex md:group-hover:bg-[#252526]/80 transition-all duration-500 rounded-xl"
         >
           <Link
+            target="_blank"
             href={gitUrl}
             className="md:h-14 md:w-14 h-9 w-9 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
@@ -23,6 +25,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             />
           </Link>
           <Link
+            target="_blank"
             href={previewUrl}
             className="md:h-14 md:w-14 h-9 w-9 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
@@ -33,11 +36,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#252526] py-6">
+      </div>
+      <div className="text-white mt-3 bg-[#252526] py-6 text-center md:text-left">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE] mb-3">{description}</p>
         <div
-          className="md:hidden w-full h-full flex justify-start"
+          className="md:hidden w-full h-full flex justify-center md:justify-start"
         >
           <Link
             href={gitUrl}
