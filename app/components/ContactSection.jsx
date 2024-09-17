@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
+// import { toast } from 'sonner';
 
 const ContactSection = () => {
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null);
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
@@ -25,6 +27,7 @@ const ContactSection = () => {
 
    if (response.ok) {
     console.log("Message sent successfully");
+    setStatus('error');
     setLoading(false);
     
     //reset the form
@@ -36,6 +39,7 @@ const ContactSection = () => {
    if (!response.ok) {
     console.log("Error sending message");
     setLoading(false);
+    setStatus('error');
    }
   }
 
@@ -116,6 +120,12 @@ const ContactSection = () => {
           Send Message
         </button>
       </form>
+      {status === 'success' && <p className="py-6 border-[#D6E1CC] border-2 bg-[#DCECD3] 
+      rounded-md text-center text-[#386A38] w-1/2 mx-auto mt-10">
+        <span className="font-bold">Thank You!</span> Your message has been sent successfully!</p>}
+      {status === 'error' && <p className="py-6 border-[#E1CCCC] border-2 bg-[#ECD3D3] 
+      rounded-md text-center text-[#BE0000] w-1/2 mx-auto mt-10">
+        There was an error sending your message.</p>}
     </section>
   );
 };
