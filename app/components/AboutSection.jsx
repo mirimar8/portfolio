@@ -98,7 +98,7 @@ const AboutSection = () => {
           <div className="pt-10">
             <Link
               href="/#contact"
-              className="px-12 py-3 mb-4 mr-0 min-[384px]:mr-4 inline-flex items-center justify-center w-fit rounded-lg sm:inline-block  
+              className="px-12 py-3 mb-4 mr-0 min-384:mr-4 inline-flex items-center justify-center w-fit rounded-lg sm:inline-block  
               bg-gradient-to-r from-[#DC2424] to-[#4A569D] text-white font-semibold text-center transition 
               duration-300 hover:from-[#bf1313] hover:to-[#2d3a81] ease"
             >

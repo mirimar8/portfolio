@@ -31,9 +31,9 @@ const HeroSection = () => {
           </h1>
         </div>
 
-        <div className="col-span-5 place-self-center">
-          <div className="rounded-full bg-gradient-to-br from-[#DC2424] to-[#4A569D] p-1">
-            <div className="rounded-full bg-[#323233] w-500 h-400">
+        <div className="col-span-5 place-self-center lg:place-self-end">
+          <div className="rounded-full bg-gradient-to-br from-[#DC2424] to-[#4A569D] p-1 max-h-770:w-11/12">
+            <div className="rounded-full bg-[#323233] w-500 h-500">
               <Image
                 className="rounded-full"
                 src="/images/hero-image.png"
