@@ -46,7 +46,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, isVisible
         <div
           className="md:hidden w-full h-full flex justify-center md:justify-start"
         >
-          <Link
+          { isVisibleGitUrl && <Link
             href={gitUrl}
             className="h-9 w-9 mr-2 border-2 relative rounded-full border-[#ADB7BE]"
           >
@@ -55,7 +55,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, isVisible
             transform -translate-x-1/2 -translate-y-1/2"
             />
           </Link>
-          <Link
+          }
+          { isVisiblePreviewUrl &&<Link
             href={previewUrl}
             className="h-9 w-9 border-2 relative rounded-full border-[#ADB7BE]"
           >
@@ -64,6 +65,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, isVisible
             transform -translate-x-1/2 -translate-y-1/2"
             />
           </Link>
+          }
         </div>
       </div>
     </div>
